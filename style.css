@@ -180,6 +180,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 80;
 }
 
 .show-menu .sidebar{
@@ -274,6 +275,7 @@ header{
 
 .sessao-conhecimentos{
     background-color: #e8e8e8;
+    height: 100%;
 }
 
 .sessao-header{
@@ -317,7 +319,8 @@ header{
 .conhecimento-img-wrapper{
     grid-column: 7 / 11;
     grid-row: 2 - 6;
-    width: 100%;
+    width: 80%;
+    height: 80%;
 }
 
 .conhecimento-img-wrapper img{
@@ -328,6 +331,7 @@ header{
 .projetos{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 2rem;
 }
 
 .card{
