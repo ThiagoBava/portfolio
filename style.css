@@ -318,9 +318,9 @@ header{
 
 .conhecimento-img-wrapper{
     grid-column: 7 / 11;
-    grid-row: 2 - 6;
-    width: 80%;
-    height: 80%;
+    grid-row: 2 / 6;
+    width: 100%;
+    height: 100%;
 }
 
 .conhecimento-img-wrapper img{
@@ -408,6 +408,10 @@ header{
 .card-info button{
     width: 8rem;
     height: 2.5rem;
+}
+
+.card-info button:hover{
+    color: #fff;
 }
 
 .card:hover .card-info{
@@ -514,4 +518,76 @@ header{
     width: 80%;
     height: 2rem;
     margin-top: 1rem;
+}
+
+
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background: url(imagens/orcamento.jpg);
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcamento-wrapper{
+    width: 60%;
+    height: 80%;
+    background-color: #ffffff99;
+    border-radius: 2px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.5);
+    position: relative;
+
+}
+
+.sessao-orcamento h1{
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: #e7f713;
+    background: -webkit-linear-gradient(to right, #FFD200, #e7f713);
+    background: linear-gradient(to right, #FFD200, #e7f713);   
+    padding: 0 3rem;
+    color: #000;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.sessao-orcamento form{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.sessao-orcamento label{
+    font-family: var(--font-secundary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sessao-orcamento input[type="number"]{
+    font-family: var(--font-secundary);
+    width: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 0.3rem;
+}
+
+.btn-orcamento{
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+    grid-column: 2;
+}
+
+.btn-orcamento button:hover{
+    color: #fff;
 }
